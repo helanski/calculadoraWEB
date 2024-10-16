@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* largura fixa para melhor organização */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex; /* usa flexbox para alinhar os campos lado a lado */
+    justify-content: space-between; /* espaço entre os campos */
+    margin: 10px 0;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 49%; /* cada campo ocupa quase metade da largura disponível */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 10px; /* Espaçamento entre os botões */
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px;
+    background-color: #835377;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d2b5d3;
+}
+
+.full-width {
+    grid-column: span 3; /* Faz o botão ocupar todas as 3 colunas */
+}
+
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+}
